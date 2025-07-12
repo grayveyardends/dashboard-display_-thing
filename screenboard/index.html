@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>College events  display</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #000000;
+    background: -moz-radial-gradient(center, #000000 0%, #2764B7 55%, #012549 100%);
+    background: radial-gradient(ellipse at top right, #000000 0%, #3070ca 90%, #0059b3 100%);
+    
+    }
+
+    .section {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      border: none
+    }
+
+    header {
+      height: 5vh;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      background: url("https://jgigroup.in/Kochi_PG/uploads/jainlogo.png") no-repeat local 50% 50%;
+      background-size: contain;
+      margin-right: 10px;
+      border: none;
+    }
+
+  
+    #dashboard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 90vh;
+      bottom: 0%;
+      top: 10%;
+      position: relative;
+    }
+
+    .event-list {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .event-list .event-card {
+      position: absolute;
+      height: 250px;
+      width: 200px;
+      top: 10%;
+      left: calc(50% - 00px);
+      transform-style: preserve-3d;
+      transform: perspective(1000px) ;
+    }
+   
+.event-list .event-card .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+    rotateY(calc( (var ( --position ) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(550px) ;
+
+}
+  .event-list .event-card .item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+   .highlight {
+      -webkit-box-shadow: 5px 5px 25px 5px #c78686; 
+       box-shadow: -2px 100px 91px 0px #754bd8, 5px 5px 10px 1px #000000;
+      
+    }
+
+    #three-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    #event-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #event-image {
+      width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="viewer" class="section">
+    <canvas id="three-canvas"></canvas>
+  </div>
+
+  <div id="dashboard" class="section">
+    
+    <div class ="event-list" >
+
+    <div class="event-card " style="--quantity: 4">
+        <div class="item" style="--position: 1"><img src="assest\event1.jpeg"></div> 
+        <div class="item"style="--position: 2"><img src="assest\event2.jpeg"></div> 
+        <div class="item"style="--position: 3"><img src="assest\event3.jpeg"></div>
+        <div class="item" style="--position: 4"><img src="assest\event4.jpeg"></div> 
+    </div>
+  </div>
+</div>
+
+<header>
+</header>
+
+
+</body>
+</html>

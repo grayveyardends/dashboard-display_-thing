@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+    header {
+      height: 5vh;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: end;
+      padding: 10px 20px;
+      position: fixed;
+      background: url("https://jgigroup.in/Kochi_PG/uploads/jainlogo.png") no-repeat local 50% 50%;
+      background-size: contain;
+      margin-right: 10px;
+      border: none;
+    }
+        
+        body{
+             display: flex;
+      flex-direction: row;
+      overflow: hidden;
+            background: radial-gradient(ellipse at top right, #000000 0%, #3070ca 90%, #0059b3 100%);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="three-box">
+    <canvas id="three-canvas"></canvas>
+  </div>
+<div class="sidebox">  
+    <div class="banner">
+        <div class="slider" style="--quantity: 4">
+        <div class="item" style="--position: 1"><img src="assest\event1.jpeg"></div> 
+        <div class="item"style="--position: 2"><img src="assest\event2.jpeg"></div> 
+        <div class="item"style="--position: 3"><img src="assest\event3.jpeg"></div>
+        <div class="item" style="--position: 4"><img src="assest\event4.jpeg"></div>
+        </div>
+    </div>
+    </div>
+<header>
+</header>
+
+     <script type="module" src="main.js"></script>
+</body>
+</html>
